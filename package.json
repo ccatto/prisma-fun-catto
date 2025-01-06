@@ -1,0 +1,26 @@
+{
+  "name": "prisma-fun-catto",
+  "version": "1.0.0",
+  "description": "prisma fun catto app simple example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint . --fix"
+  },
+  "repository": "https://github.com/ccatto/prisma-fun-catto.git",
+  "author": "Chris Catto ",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "prisma": "^6.1.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0"
+  }
+}
