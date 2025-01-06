@@ -1,0 +1,23 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") 
+}
+
+model UserTest {
+  id        Int     @id @default(autoincrement())
+  email     String  @unique
+  name      String?
+}
+
+model PostTest {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  authorId  Int
+
+}
